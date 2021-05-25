@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List</title>
+    <script defer src="models/todoList.js"></script>
+    <script defer src="models/todo.js"></script>
+    <script defer src="controllers/controller.js"></script>
+    <script defer src="utils/utils.js"></script>
+    <script defer type="text/javascript" src="/config.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="input-wrapper">
+        <form>
+        <input id="new-todo-input" placeholder="Enter the task" autofocus>
+        <button id="todo-button" type="reset">Add task</button>
+        </form>
+    </div>
+        <div id="todo-block"></div>
+    <div class="filter-buttons">
+        <button id="show-all-todos-button" type="button">All tasks</button>
+        <button id="show-completed-todos-button" type="button">Completed tasks</button>
+        <button id="show-not-completed-todos-button" type="button">Uncompleted tasks</button>
+    </div>
+    <div class="delete-button-block">
+        <button id="delete-completed-button" type="button">Delete selected tasks</button>
+        <button id="delete-all-button" type="button">Delete all tasks</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "To_Do_List_Json",
+  "version": "1.0.0",
+  "description": "# This todo app is an example of a notebook. The app allows: - Add tasks to notebook - Delete tasks - Filter tasks - Prioritize tasks for completion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

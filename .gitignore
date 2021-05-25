@@ -1,0 +1,7 @@
+node_modules
+styles/style.css
+styles/style.css.map
+styles/.sass-cache/
+styles/.idea
+.idea/
+

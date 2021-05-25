@@ -1,0 +1,160 @@
+$mainTextSize: 1.3em;
+$mainBorder: solid black 1px;
+$filterButtonBorder: solid black 3px;
+
+
+.main-wrapper {
+  margin: 50px auto;
+  width: 760px;
+  height: 960px;
+  border: solid 1px #a9a9a9;
+  box-shadow: 5px 5px gray;
+  background-image: url('../images/background_image.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  justify-content: center;
+}
+
+#new-todo-input {
+  border: $mainBorder;
+  border-radius: 5px;
+  width: 400px;
+  height: 38px;
+  padding-left: 10px;
+  font-size: $mainTextSize;
+}
+
+#todo-button {
+  margin-left: 10px;
+  border: $mainBorder;
+  border-radius: 5px;
+  width: 120px;
+  height: 42px;
+  font-size: $mainTextSize;
+}
+
+.todo-message {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin: 10px auto;
+  width: 540px;
+  height: 38px;
+  border: 3px solid;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1.3em;
+  cursor: move;
+  user-select: none;
+}
+
+.done-button {
+  margin-left: 505px;
+  width: 25px;
+  height: 25px;
+  border: $mainBorder;
+  border-radius: 5px;
+  background-image: url('../images/cross.jpg');
+  background-size: cover;
+  position: absolute;
+}
+
+.placeholder {
+  background-color: #edf2f7;
+  border: 2px dashed #cbd5e0;
+  margin-bottom: 1rem;
+}
+
+.delete-buttons-block {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#delete-completed-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 400px;
+  height: 42px;
+  border: solid black 3px;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+#delete-completed-button[button-display='display-none'] {
+  display: none;
+}
+
+#delete-all-button {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  align-items: center;
+  width: 300px;
+  height: 42px;
+  border: solid black 3px;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+#delete-all-button[button-display='display-none'] {
+  display: none;
+}
+
+.todo-message[data-text-decoration='text-decoration'] {
+  text-decoration: line-through;
+}
+
+.filter-buttons {
+  display: flex;
+  width: 500px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px auto;
+}
+
+#show-all-todos-button {
+  height: 42px;
+  width: 150px;
+  border: $filterButtonBorder;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+#show-all-todos-button[button-display='display-none'] {
+  display: none;
+}
+
+#show-completed-todos-button {
+  height: 42px;
+  width: 150px;
+  border: $filterButtonBorder;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+#show-completed-todos-button[button-display='display-none'] {
+  display: none;
+}
+
+#show-not-completed-todos-button {
+  height: 42px;
+  width: 150px;
+  border: $filterButtonBorder;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+#show-not-completed-todos-button[button-display='display-none'] {
+  display: none;
+}
+
+
